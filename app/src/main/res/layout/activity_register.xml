@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="Sign Up" />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="enter your username"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="enter your email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="@color/hint_color"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:ems="10"
+            android:textSize="13sp"
+            android:inputType="textPassword"
+            android:hint="enter your password"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/confirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:ems="10"
+            android:textSize="13sp"
+            android:inputType="textPassword"
+            android:hint="confirm your password"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Register"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary"
+            />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:gravity="right"-->
+<!--            android:paddingTop="12dp"-->
+<!--            android:paddingBottom="12dp"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/alreadyRegistred"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_margin="8px"-->
+<!--                android:backgroundTint="@color/secondary"-->
+<!--                android:padding="12dp"-->
+<!--                android:text="Already registred?"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="12sp" />-->
+<!--        </LinearLayout>-->
+        <Button
+            android:id="@+id/alreadyRegistred"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/secondary"
+            android:padding="12dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="Already registred?"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hint_color"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:padding="12dp"
+            android:textStyle="italic"
+            android:text="@string/copy" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_color"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textStyle="italic"
+            android:text="All rights reserved" />
+
+
+    </LinearLayout>
+</layout>

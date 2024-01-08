@@ -10,18 +10,25 @@ import com.example.newsappkotlin.fragments.FavoritesFragment
 import com.example.newsappkotlin.fragments.HomeFragment
 import com.example.newsappkotlin.fragments.ProfileFragment
 import com.example.newsappkotlin.fragments.SavedArticlesFragment
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class CentralAppActivity : AppCompatActivity() {
     private lateinit var binding:ActivityCentralAppBinding
+    private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding : ActivityCentralAppBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_central_app)
         ///TODO : userId is to be got from the login activity
-        val userId:Int = 1
+
+        auth = FirebaseAuth.getInstance()
+        val userId: String = auth.currentUser?.uid ?: "defaultUserId"
+
         replaceFragment(HomeFragment(userId))
-        binding.bottomNavigationView.setOnItemReselectedListener {
+        binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.home ->{
                     Log.v("matrab","Clicked Home")

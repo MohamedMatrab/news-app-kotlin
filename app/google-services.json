@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "192792459753",
+    "project_id": "mobileproject-d3c7b",
+    "storage_bucket": "mobileproject-d3c7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192792459753:android:3fb3392eeb6404f0b43378",
+        "android_client_info": {
+          "package_name": "com.example.mobileproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNokiEYc_9ckbAZo6qIBXSzl0utbJH3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192792459753:android:0af30bd201097714b43378",
+        "android_client_info": {
+          "package_name": "com.example.newsappkotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNokiEYc_9ckbAZo6qIBXSzl0utbJH3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

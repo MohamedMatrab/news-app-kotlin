@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.newsappkotlin.R
 
-class FavoritesFragment(val userId:Int) : Fragment() {
+class FavoritesFragment(val userId:String) : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
